@@ -3,79 +3,168 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuvexa</title>
+    <title>Nuvexa | Your Product Showcase</title>
+    <!-- Preconnects improve font loading performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <!-- Poppins is a clean, modern sans serif suitable for ecommerce -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h1>Nuvexa</h1>
-      <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <header class="site-header">
+      <div class="container">
+        <a href="#" class="logo">Nuvexa</a>
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#categories">Categories</a>
+          <a href="#why">Why Us</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn btn-outline">Contact</a>
+        </nav>
+      </div>
     </header>
 
-    <section id="hero">
-      <h2>Innovating the Future</h2>
-      <p>
-        Welcome to Nuvexa, a platform dedicated to delivering cutting-edge solutions
-        and services.
-      </p>
-      <a href="#contact" class="btn">Get Started</a>
-    </section>
+    <main>
+      <!-- Hero section introduces the brand with a strong visual and call‑to‑action -->
+      <section id="home" class="hero">
+        <div class="hero-content container">
+          <h1>Elevate Your Brand</h1>
+          <p>
+            Discover curated products ready to make an impact. Bring your brand
+            vision to life with quality and style.
+          </p>
+          <a href="#categories" class="btn btn-primary">Explore Categories</a>
+        </div>
+      </section>
 
-    <section id="about">
-      <h2>About Nuvexa</h2>
-      <p>
-        Nuvexa is a creative and dynamic company committed to fostering
-        innovation across multiple domains. Our mission is to bridge technology
-        with human-centric design, delivering value to our clients and
-        communities.
-      </p>
-    </section>
+      <!-- Categories showcase the primary collections you offer -->
+      <section id="categories" class="categories-section">
+        <div class="container">
+          <h2>Featured Categories</h2>
+          <p class="section-lead">
+            Each collection is carefully curated to highlight outstanding
+            products fit for brand approval.
+          </p>
+          <div class="categories-grid">
+            <div class="category-card">
+              <img
+                src="electronics.png"
+                alt="Electronics category"
+              />
+              <h3>Electronics</h3>
+              <p>
+                Cutting‑edge gadgets and accessories to power your everyday
+                life — smartphones, headphones, smart home devices and more.
+              </p>
+            </div>
+            <div class="category-card">
+              <img
+                src="home_kitchen.png"
+                alt="Home &amp; Kitchen category"
+              />
+              <h3>Home &amp; Kitchen</h3>
+              <p>
+                Quality essentials to elevate your living space, from cookware
+                and appliances to décor and organisation solutions.
+              </p>
+            </div>
+            <div class="category-card">
+              <img
+                src="health_beauty.png"
+                alt="Health &amp; Beauty category"
+              />
+              <h3>Health &amp; Beauty</h3>
+              <p>
+                Products designed to help you look and feel your best,
+                including skincare, wellness supplements and personal care
+                items.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="service-cards">
-        <div class="card">
-          <h3>Consulting</h3>
+      <!-- Why us section builds trust with key differentiators -->
+      <section id="why" class="features-section">
+        <div class="container">
+          <h2>Why Choose Us</h2>
+          <p class="section-lead">
+            Trust and quality are at the heart of our business. Here’s what
+            sets us apart.
+          </p>
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="icon">✔</div>
+              <h3>Quality Assurance</h3>
+              <p>
+                Every item is vetted for quality and authenticity so you can
+                shop with confidence.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">🚚</div>
+              <h3>Fast Shipping</h3>
+              <p>
+                We work with trusted carriers to deliver your orders quickly
+                and safely.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="icon">🧑‍💻</div>
+              <h3>Customer Support</h3>
+              <p>
+                Our team is here to answer questions and ensure a smooth
+                purchasing experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About section explains your mission and purpose -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>About Nuvexa</h2>
           <p>
-            We provide expert consulting to help you navigate digital
-            transformation and maximize your potential.
+            We built this site to present our product catalogue to brand
+            owners and consumers. By curating high‑quality items and
+            delivering a polished online experience, we set the stage for
+            successful brand approval and long‑term trust.
           </p>
         </div>
-        <div class="card">
-          <h3>Product Development</h3>
-          <p>
-            From concept to launch, we craft bespoke digital products tailored
-            to your vision.
+      </section>
+
+      <!-- Contact section allows visitors to reach out -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <h2>Contact Us</h2>
+          <p class="section-lead">
+            Have a question or want to discuss partnerships? Reach out!
           </p>
+          <form class="contact-form">
+            <div class="form-row">
+              <input type="text" placeholder="Your Name" required />
+              <input type="email" placeholder="Your Email" required />
+            </div>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
         </div>
-        <div class="card">
-          <h3>Training &amp; Workshops</h3>
-          <p>
-            Empower your team with hands-on workshops and training sessions on
-            emerging technologies and methodologies.
-          </p>
-        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025 Nuvexa. All rights reserved.</p>
       </div>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Us</h2>
-      <p>Have a project in mind or just want to say hello? Reach out!</p>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
-
-    <footer>
-      <p>&copy; 2025 Nuvexa. All rights reserved.</p>
     </footer>
   </body>
 </html>
